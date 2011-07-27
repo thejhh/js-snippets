@@ -5,7 +5,7 @@ Desctiption
 -----------
 
 Small collection of useful small snippets for JavaScript and 
-(Node.js)[http://www.nodejs.org]. Designed to be lightweight, independent and 
+[Node.js](http://www.nodejs.org). Designed to be lightweight, independent and 
 undisruptive as much as possible.
 
 Installation for Node.js
