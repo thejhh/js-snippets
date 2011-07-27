@@ -1,7 +1,7 @@
 JavaScript Snippet Collection
 =============================
 
-Desctiption
+Description
 -----------
 
 Small collection of useful small snippets for JavaScript and 
