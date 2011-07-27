@@ -1,0 +1,22 @@
+{
+  "name": "snippets",
+  "description": "JavaScript Snippet Collection",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jheusala/js-snippets.git"
+  },
+  "author": "Jaakko-Heikki Heusala <jheusala@iki.fi> (http://www.jhh.me)",
+  "main": "./lib/snippets.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "./tests/runner.js"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
