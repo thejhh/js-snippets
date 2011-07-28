@@ -24,20 +24,21 @@ Foreach Example
 
 See [examples/](http://github.com/jheusala/js-snippets/tree/master/examples) for full examples.
 
+Initialize our foreach function:
 
+	var foreach = require('../lib/snippets.js').foreach;
 
-    var foreach = require('../lib/snippets.js').foreach;
+Write each array element to console:
 
-
-Foreach array:
-    var a = [1,2,3,4,5];
-    foreach(a).do(function(v) { console.log(v); });
+	var a = [1,2,3,4,5];
+	foreach(a).do(function(v) { console.log(v); });
   
-Foreach object:
-    a = {'foo':1,'bar':2};
-    foreach(a).do(function(v, k) { console.log(k+"="+v); });
+Write each object key=value pair to console:
 
-Foreach single variable:
+	a = {'foo':1,'bar':2};
+	foreach(a).do(function(v, k) { console.log(k+"="+v); });
 
-    a = 'foobar';
-    foreach(a).do(function(v) { console.log(v); });
+Write single value to console:
+
+	a = 'foobar';
+	foreach(a).do(function(v) { console.log(v); });
