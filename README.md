@@ -25,7 +25,7 @@ See [examples/](http://github.com/jheusala/js-snippets/tree/master/examples) for
 
 Initialize our foreach function:
 
-	var foreach = require('../lib/snippets.js').foreach;
+	var foreach = require('snippets').foreach;
 
 Write each array element to console:
 
