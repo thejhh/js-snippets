@@ -31,7 +31,7 @@ Is Something
 	var a = [1,2,3,4,5];
 	if(is.array(a)) console.log("a is array");
 	else if(is.object(a)) console.log("a is object");
-	else console.log("a is not array or object");
+	else console.log("a is not array nor object");
 
 Foreach Example
 ---------------
