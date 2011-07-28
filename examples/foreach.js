@@ -1,5 +1,5 @@
 
-/* Foreach examples */
+/* Foreach examples -- Automatic format */
 
 var foreach = require('snippets').foreach;
 
@@ -15,7 +15,9 @@ foreach(a).do(function(v, k) { console.log(k+"="+v); });
 a = 'foobar';
 foreach(a).do(function(v) { console.log(v); });
 
-var foreach = require('snippets/foreach');
+/* Foreach examples -- Specific format */
+
+var foreach = require('snippets/lib/foreach');
 
 // Foreach only arrays
 a = [1,2,3,4,5];
