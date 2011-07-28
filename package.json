@@ -1,7 +1,7 @@
 {
   "name": "snippets",
   "description": "JavaScript Snippet Collection",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "http://github.com/jheusala/js-snippets",
   "repository": {
     "type": "git",

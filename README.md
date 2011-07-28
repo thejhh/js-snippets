@@ -11,8 +11,7 @@ undisruptive as much as possible.
 Installation for Node.js
 ------------------------
 
-Simplest way to install is to use [npm](http://npmjs.org/), just simply `npm 
-install /path/to/snippets`.
+Simplest way to install is to use [npm](http://npmjs.org/), just simply `npm install snippets`.
 
 License
 -------
