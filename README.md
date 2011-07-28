@@ -8,6 +8,12 @@ Small collection of useful small snippets for JavaScript and
 [Node.js](http://www.nodejs.org). Designed to be lightweight, independent and 
 undisruptive as much as possible.
 
+Features
+--------
+
+* Is Something
+* Foreach
+
 Installation for Node.js
 ------------------------
 
@@ -17,6 +23,15 @@ License
 -------
 
 MIT-style license, see [INSTALL.txt](http://github.com/jheusala/js-snippets/blob/master/LICENSE.txt).
+
+Is Something
+------------
+
+	var is = require('snippets').is;
+	var a = [1,2,3,4,5];
+	if(is.array(a)) console.log("a is array");
+	else if(is.object(a)) console.log("a is object");
+	else console.log("a is not array or object");
 
 Foreach Example
 ---------------
