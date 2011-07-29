@@ -11,8 +11,11 @@ undisruptive as much as possible.
 Features
 --------
 
-* Is Something
-* Foreach
+* is -- Check variable types
+* foreach -- For each element in array or object or the element itself
+* split -- Split variable into smaller chunks by regexp
+* join -- Join array or object as a string with multiple seperators
+* pass -- Pass vector values to a callback as arguments
 
 Installation for Node.js
 ------------------------
@@ -24,8 +27,19 @@ License
 
 MIT-style license, see [INSTALL.txt](http://github.com/jheusala/js-snippets/blob/master/LICENSE.txt).
 
-Is Something
+Initializing
 ------------
+
+Every feature is a property of snippets:
+
+    var foreach = require('snippets').foreach;
+    var split = require('snippets').split;
+    var pass = require('snippets').pass;
+
+See [examples/](http://github.com/jheusala/js-snippets/tree/master/examples) for full examples.
+
+Is
+--
 
 	var is = require('snippets').is;
 	var a = [1,2,3,4,5];
@@ -33,14 +47,8 @@ Is Something
 	else if(is.object(a)) console.log("a is object");
 	else console.log("a is not array nor object");
 
-Foreach Example
----------------
-
-See [examples/](http://github.com/jheusala/js-snippets/tree/master/examples) for full examples.
-
-Initialize our foreach function:
-
-	var foreach = require('snippets').foreach;
+Foreach
+-------
 
 Write each array element to console:
 
@@ -56,3 +64,40 @@ Write single value to console:
 
 	a = 'foobar';
 	foreach(a).do(function(v) { console.log(v); });
+
+Split
+-----
+
+Splits string into smaller chunks using regexp:
+
+	var vector = split(/: */, "One: Two:  Three:   End", 2);
+
+Resulting `vector` will be `["One", "Two:  Three:   End"]`.
+
+Please note: Standard JavaScript split does NOT append the rest of the string in the last element.
+
+Join
+----
+
+Joins an array into a string with multiple separators:
+
+	var str = join(["a","b","c"], [":","."]);
+
+Resulting `str` will be `"a:b.c"`.
+
+Default separator is `","`. 
+
+To change the default, use:
+
+	var str = join(["a","b","c"], [":"], ".");
+
+Pass
+----
+
+Passes the values from array into the callback as arguments:
+
+	pass(["a", "b"]).on(function(key, value) { console.log(key+"="+value); });
+
+To parse a key-value line, we can use `pass` with `split`:
+
+	pass(split(/ *= */, "a = b", 2)).on(function(key,value) { console.log(key+"="+value); });
