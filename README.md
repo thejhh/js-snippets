@@ -72,7 +72,9 @@ Splits string into smaller chunks using regexp:
 
 	var vector = split(/: */, "One: Two:  Three:   End", 2);
 
-Resulting `vector` will be `["One", "Two:  Three:   End"]`.
+Resulting `vector` will be:
+
+	["One", "Two:  Three:   End"]
 
 Please note: Standard JavaScript split does NOT append the rest of the string in the last element.
 
