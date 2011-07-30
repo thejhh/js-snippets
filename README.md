@@ -103,3 +103,20 @@ Passes the values from array into the callback as arguments:
 To parse a key-value line, we can use `pass` with `split`:
 
 	pass(split(/ *= */, "a = b", 2)).on(function(key,value) { console.log(key+"="+value); });
+
+Trimmers
+--------
+
+To remove white spaces:
+
+	a = ltrim('  Hello World '); // a = 'Hello World '
+	a = rtrim('  Hello World '); // a = '  Hello World'
+	a = trim('  Hello World ');  // a = 'Hello World'
+
+Padders
+-------
+
+Pad string to specific length from left:
+
+	a = lpad('123', 5, '#'); // a = '##123';
+	a = rpad('123', 5, '#'); // a = '123##';
