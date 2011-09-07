@@ -53,17 +53,17 @@ Foreach
 Write each array element to console:
 
 	var a = [1,2,3,4,5];
-	foreach(a).do(function(v) { console.log(v); });
+	foreach(a).each(function(v) { console.log(v); });
   
 Write each object key=value pair to console:
 
 	a = {'foo':1,'bar':2};
-	foreach(a).do(function(v, k) { console.log(k+"="+v); });
+	foreach(a).each(function(v, k) { console.log(k+"="+v); });
 
 Write single value to console:
 
 	a = 'foobar';
-	foreach(a).do(function(v) { console.log(v); });
+	foreach(a).each(function(v) { console.log(v); });
 
 Split
 -----
