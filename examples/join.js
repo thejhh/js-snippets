@@ -1,5 +1,5 @@
 
 var join = require('snippets').join,
-    sys = require('sys');
+    util = require('util');
 
-console.log(sys.inspect( join(['a', 'b', 'c'], ['.', ' / ']) ));
+console.log(util.inspect( join(['a', 'b', 'c'], ['.', ' / ']) ));
